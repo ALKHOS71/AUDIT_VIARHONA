@@ -80,8 +80,8 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new SearchLayer({
-      layer: lyr_BDVIARHONASIGNALISATIONEQUIPEMENT_6,
-      colName: 'ID_photo',
+      layer: lyr_COMMUNEMISSIONAETB_2,
+      colName: 'NOM_M',
       zoom: 10,
       collapsed: true,
       map: map
@@ -92,7 +92,7 @@ map.addControl(layerSwitcher);
     .getElementsByTagName('button')[0].className +=
     ' fa fa-binoculars';
     
-map.getView().fit([798740.331730, 6471652.226988, 1028186.983536, 6590570.779998], map.getSize());
+map.getView().fit([822770.555100, 6486064.988063, 930323.673106, 6541808.059772], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -241,7 +241,7 @@ var onPointerMove = function(evt) {
                     highlightStyle = new ol.style.Style({
                         image: new ol.style.Circle({
                             fill: new ol.style.Fill({
-                                color: "#ffff00"
+                                color: "#ffffff"
                             }),
                             radius: radius
                         })
@@ -252,7 +252,7 @@ var onPointerMove = function(evt) {
 
                     highlightStyle = new ol.style.Style({
                         stroke: new ol.style.Stroke({
-                            color: '#ffff00',
+                            color: '#ffffff',
                             lineDash: null,
                             width: featureWidth
                         })
@@ -261,7 +261,7 @@ var onPointerMove = function(evt) {
                 } else {
                     highlightStyle = new ol.style.Style({
                         fill: new ol.style.Fill({
-                            color: '#ffff00'
+                            color: '#ffffff'
                         })
                     })
                 }
